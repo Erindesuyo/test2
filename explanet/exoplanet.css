@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 50px;
+    margin: 0;
+    color: aliceblue;
+    text-shadow: 0 0 20px rgb(178, 178, 178);
+    overflow-x: hidden;
+    
+    background-image: url('../image/wide space2.png');
+    background-size: 150% auto;  /* 폭은 100%, 높이는 자동 조정 */
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+
+
+.text-container {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 3; /* 별자리보다 더 위에 */
+}
+
+
+h1 {
+    margin-bottom: 0px;
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 100px;
+    font-weight: lighter;
+    /* text-shadow: 0 0 10px black; 흰색으로 할지 검정으로 할지 고민 ㅜ*/
+}
+
+
+.content-wrapper {
+    width: 100%;
+    /* margin-top이나 padding-top으로 원하는 위치 지정 */
+    padding-top: 900px; /* 예시 */
+}
+.ques, .ans {
+    text-align: center;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+.ques{
+    font-size: 30px;
+}
+.ans {
+    font-size: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navi */
+nav {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: fixed;
+    left: 50px; /* body의 padding-left와 동일한 값을 설정 */
+    z-index: 1000;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    padding: 0 20px; 
+}
+
+.logo{
+    font-size: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    display: flex;  /* 가로 정렬 */
+    gap: 40px; /* 메뉴 간격 조절 */
+    width: auto;
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+}
+
+ /* .menu a {
+    border: 1px solid gray;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px; } */
+
+.icon:hover {
+    color: rgb(54, 57, 239);
+}
+
+
+

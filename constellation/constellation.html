@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Constellation Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Orbitron:wght@400;700&family=Genos:wght@300;400;500;700&family=Bungee+Hairline&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="constellation.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav id="nav">
+            <a href="../index.html" class="logo">Logo</a>
+    
+            <div class="menu">
+                <a href="../solarSytem.html" class="icon">Solar System</a>
+                <a href="#" class="icon">Constellation</a>
+                <a href="../explanet/exoplenet.html" class="icon">Exoplanet</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="text-container">
+        <h1 class="const">Constellation</h1>
+    </div>
+    
+
+    <section class="constellations">
+        <img src="../image/400w/aries.png" alt="Aries" class="constellation" data-info="The Ram. Represents the golden ram in Greek mythology that saved Phrixus." style="top: 200px; left: 50px;">
+        <img src="../image/400w/aquarius.png" alt="Aquarius" class="constellation" data-info="The Water Bearer. Symbolizes Ganymede, a youth who served gods as a cup-bearer." style="top: 500px; left: 1000px;">
+        <img src="../image/400w/cancer.png" alt="Cancer" class="constellation" data-info="The Crab. Cancer is one of the faintest constellations in the zodiac" style="top: 100px; left: 1000px;">
+        <img src="../image/400w/capricornus.png" alt="Capricornus" class="constellation" data-info="The Sea Goat. Represents the goat-fish hybrid, associated with Pan." style="top: 300px; left: 150px;">
+        <img src="../image/400w/gemini.png" alt="Gemini" class="constellation" data-info="The Twin. Gemini's stars Castor and Pollux are actually multiple star systems." style="top: 400px; left: 350px;">
+        <img src="../image/400w/leo.png" alt="Leo" class="constellation" data-info="The Lion. Leo contains the bright star Regulus, known as the heart of the lion." style="top: 170px; left: 400px;">
+        <img src="../image/400w/libra.png" alt="Libra" class="constellation" data-info="The Scales. Represents the scales of justice held by Astraea." style="top: 300px; left: 700px;">
+        <img src="../image/400w/pisces.png" alt="Pisces" class="constellation" data-info="The Fish. Pisces marks the start of the astrological year." style="top: 550px; left: 100px;">
+        <img src="../image/400w/sagittarius.png" alt="Sagittarius" class="constellation" data-info="The Archer. Sagittarius points to the center of the Milky Way." style="top: 350px; left: 1100px;">
+        <img src="../image/400w/scorpius.png" alt="Scorpius" class="constellation" data-info="The Scorpion. Scorpius has one of the brightest stars, Antares" style="top: 450px; left: 550px;">
+        <img src="../image/400w/taurus.png" alt="Taurus" class="constellation" data-info="The Bull. Based on the Cretan Bull that Hercules captured." style="top: 140px; left: 700px;">
+        <img src="../image/400w/virgo.png" alt="Virgo" class="constellation" data-info="The Scales. Represents the scales of justice held by Astraea." style="top: 500px; left: 800px;">
+      </section>
+    
+      <!-- 모달 (info 박스) -->
+    <div class="info-overlay">
+        <div class="info-box">
+          <span class="close-btn">X</span>
+          <h4 class="info-name"></h4>
+          <p class="info-text"></p>
+        </div>
+    </div>
+
+
+
+    
+    <!-- 생일 입력 폼 추가 -->
+    <div class="zodiac-form">
+        <h2>What's your Zodiac Sign?</h2>
+        <label for="birthdate"></label>
+        <input type="date" id="birthdate">
+        <button onclick="findZodiacSign()">Find</button>
+    </div>
+
+<!-- 결과를 표시할 영역 -->
+    <div class="zodiac-result">
+        <h3 id="zodiac-name"></h3>
+        <p id="zodiac-description"></p>
+    </div>
+
+
+
+    
+
+
+
+    <script src="jquery-1.12.4.js"></script>
+    <script src="constellation.js"></script>
+</body>
+</html>
